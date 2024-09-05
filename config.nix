@@ -15,14 +15,14 @@
   users.users.rdpuser = {
     isNormalUser = true;
     extraGroups = [ "rdpusers" ];  # Create a group to restrict RDP access
-    hashedPassword = "$6$rounds=656000$......"; # Replace with hashed password for shared RDP access
+    hashedPassword = "$6$SHvvJBicOeRfcY5H$DXI/imovUG0OjWaI0cOHnMvlJnDO690V.uYdZFw3VJfxJBopSdAtpMI5RmmgQgFHJwd1eJcOkNxsf7iGDI/nX1"; # Replace with hashed password for shared RDP access
   };
 
   # General user configuration
   users.users.myuser = {
     isNormalUser = true;
     extraGroups = [ "wheel" "docker" "nginx" ]; # Adjust groups as necessary
-    hashedPassword = "$6$rounds=656000$......"; # Replace with hashed password
+    hashedPassword = "$$6$SHvvJBicOeRfcY5H$DXI/imovUG0OjWaI0cOHnMvlJnDO690V.uYdZFw3VJfxJBopSdAtpMI5RmmgQgFHJwd1eJcOkNxsf7iGDI/nX1"; # Replace with hashed password
   };
 
   # Environment system packages
